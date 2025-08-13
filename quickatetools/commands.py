@@ -11,6 +11,9 @@ def show_help():
     print('    参数:')
     print('      -p, --size  矩阵大小 (默认为3)')
     print('      -c, --char  对角线字符 (默认为M)')
+    print('  templateFeature - 新功能的描述')
+    print('    参数:')
+    print('      -p, --param  参数说明')
     sys.exit(0)
 
 def main():
@@ -25,10 +28,16 @@ def main():
         # 传递参数给 clipboard_matrix 的 main 函数
         sys.argv = ['clipboard_matrix'] + args
         clipboard_matrix.main()
+    elif tool_name == 'templateFeature':
+        from quickatetools import template_feature
+        # 传递参数给 template_feature 的 main 函数
+        sys.argv = ['template_feature'] + args
+        template_feature.main()
     else:
         print(f'未知工具: {tool_name}')
         print('可用工具:')
         print('  clipboardMatrix - 生成对角矩阵并复制到剪贴板')
+        print('  templateFeature - 新功能的描述')
         sys.exit(1)
 
 

@@ -18,7 +18,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'qate=quickatetools.cli:main',
+            'qate=quickatetools.commands:main',
         ],
     },
     classifiers=[
