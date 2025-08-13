@@ -1,0 +1,42 @@
+# 虚拟环境
+venv/
+
+# Python缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 包构建产物
+*.egg-info/
+build/
+dist/
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Windows批处理文件（如果需要分享给其他用户可以删除此行）
+# qate.bat
+
+# 测试报告
+htmlcov/
+coverage.xml
+
+# 日志文件
+*.log
+
+# IDE配置
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 数据库文件
+*.db
+*.sqlite3
