@@ -5,7 +5,7 @@
 ## 安装
 
 ```bash
-pip install .
+pip install QuickATETools
 ```
 
 ## 使用方法
@@ -13,7 +13,7 @@ pip install .
 ### 生成对角矩阵并复制到剪贴板
 
 ```bash
-cc clipboardMatrix -p <矩阵大小> [-c <对角线字符>]
+qate clipboardMatrix -p <矩阵大小> [-c <对角线字符>]
 ```
 
 #### 参数说明
@@ -24,7 +24,7 @@ cc clipboardMatrix -p <矩阵大小> [-c <对角线字符>]
 
 生成3x3的对角矩阵（默认使用'M'）：
 ```bash
-cc clipboardMatrix -p 3
+qate clipboardMatrix -p 3
 ```
 
 生成的矩阵：
@@ -36,7 +36,7 @@ M00
 
 生成4x4的对角矩阵，使用'X'作为对角线字符：
 ```bash
-cc clipboardMatrix -p 4 -c X
+qate clipboardMatrix -p 4 -c X
 ```
 
 生成的矩阵：
